@@ -1,0 +1,186 @@
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: background 0.5s ease;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px 50px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .counter-display {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #667eea;
+            margin: 15px 0;
+            transition: color 0.3s ease;
+            user-select: none;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin: 20px 0 30px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            letter-spacing: 0.5px;
+            outline: none;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .btn-inc {
+            background: #667eea;
+            color: #fff;
+        }
+
+        .btn-inc:hover {
+            background: #5a6fd6;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-dec {
+            background: #f093fb;
+            color: #fff;
+        }
+
+        .btn-dec:hover {
+            background: #e07ce8;
+            box-shadow: 0 8px 20px rgba(240, 147, 251, 0.4);
+        }
+
+        .btn-reset {
+            background: #f5f5f5;
+            color: #666;
+        }
+
+        .btn-reset:hover {
+            background: #e8e8e8;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-color {
+            background: #43e97b;
+            color: #fff;
+        }
+
+        .btn-color:hover {
+            background: #35d16a;
+            box-shadow: 0 8px 20px rgba(67, 233, 123, 0.4);
+        }
+
+        .message {
+            margin-top: 20px;
+            padding: 12px 16px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: #555;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .message.highlight {
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #ffc107;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #bbb;
+            letter-spacing: 0.5px;
+        }
+
+        /* 动态颜色模式 */
+        body.dark-mode {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        body.dark-mode .card {
+            background: rgba(30, 30, 50, 0.95);
+        }
+
+        body.dark-mode h1 {
+            color: #eee;
+        }
+
+        body.dark-mode .subtitle {
+            color: #aaa;
+        }
+
+        body.dark-mode .counter-display {
+            color: #43e97b;
+        }
+
+        body.dark-mode .message {
+            background: #2a2a40;
+            color: #ccc;
+        }
+
+        body.dark-mode .btn-reset {
+            background: #3a3a50;
+            color: #ddd;
+        }
+
+        body.dark-mode .btn-reset:hover {
+            background: #4a4a60;
+        }
+
+        body.dark-mode .footer {
+            color: #666;
+        }
+    
